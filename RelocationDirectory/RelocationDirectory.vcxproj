@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{56040e39-a282-4cc4-b785-e5642523540d}</ProjectGuid>
-    <RootNamespace>BaseRelocation</RootNamespace>
+    <ProjectGuid>{f0188c51-236c-466f-a456-da7d7cea5cc1}</ProjectGuid>
+    <RootNamespace>RelocationDirectory</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>RelocationDirectory</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

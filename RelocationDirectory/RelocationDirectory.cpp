@@ -17,7 +17,7 @@ DWORD RvaToOffset(DWORD rva, DWORD VirtualOffset, DWORD RawOffset)
 
 void AnalyzeRelocation(const PBYTE peFile, DWORD offsetToRelocTable, const DWORD relocTableSize)
 {
-	DWORD offset = 0; 
+	DWORD offset = 0;
 
 	for (int i = 0; offset < relocTableSize; ++i)
 	{
@@ -88,7 +88,7 @@ int main()
 	DWORD rva_to_offset = RvaToOffset(pe_data_directory.VirtualAddress, section_headers->VirtualAddress, section_headers->PointerToRawData);
 
 
-	AnalyzeRelocation( pe_file_buffer.data(), rva_to_offset , pe_data_directory.Size  );
+	AnalyzeRelocation(pe_file_buffer.data(), rva_to_offset, pe_data_directory.Size);
 
 	return 1;
 }
